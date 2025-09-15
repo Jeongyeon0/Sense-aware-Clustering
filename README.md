@@ -1,1 +1,5 @@
-단어 의미 모호성 해소를 위한 클러스터링된 의미 레이블 생성 코드
+Enhancing Zero-shot Word Sense Disambiguation via Clustered Sense Vectors
+
+
+
+https://ieeexplore.ieee.org/document/11126102

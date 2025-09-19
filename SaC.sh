@@ -1,6 +1,6 @@
 
 k=1
-result=new_SDHC_allow_synonym_result
+result=SaC_result
 
 
 for mode in average centroid
@@ -9,7 +9,7 @@ do
     threshold=0.5
     for file_name in noun verb adj adv
     do
-        python3 SaC.py --vector_file SimCSE_vector/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
+        python3 SaC.py --vector_file sample/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
     done
 
     fold_name=cos_06
@@ -17,7 +17,7 @@ do
 
     for file_name in noun verb adj adv
     do
-        python3 SaC.py --vector_file SimCSE_vector/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
+        python3 SaC.py --vector_file sample/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
     done
 
 
@@ -26,7 +26,7 @@ do
 
     for file_name in noun verb adj adv
     do
-        python3 SaC.py --vector_file SimCSE_vector/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
+        python3 SaC.py --vector_file sample/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
     done
 
 
@@ -35,7 +35,7 @@ do
 
     for file_name in noun verb adj adv
     do
-        python3 SaC.py --vector_file SimCSE_vector/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
+        python3 SaC.py --vector_file sample/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
     done
 
 
@@ -44,7 +44,7 @@ do
 
     for file_name in noun verb adj adv
     do
-        python3 SaC.py --vector_file SimCSE_vector/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
+        python3 SaC.py --vector_file sample/$file_name.vector --output $result/k_$k/$mode/$fold_name/$file_name.cls.result --nbit -1 --threshold $threshold --mode $mode --num_k 1
     done
 done
 
